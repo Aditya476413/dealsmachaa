@@ -199,7 +199,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const dropdownBars = {
         shirts: document.getElementById('shirts-dropdown-bar'),
         pants: document.getElementById('pants-dropdown-bar'),
-        sarees: document.getElementById('sarees-dropdown-bar')
+        sarees: document.getElementById('sarees-dropdown-bar'),
+        gadgets: document.getElementById('gadgets-dropdown-bar')
     };
     function showOnlyDropdownBar(category) {
         Object.keys(dropdownBars).forEach(key => {
@@ -363,6 +364,41 @@ document.addEventListener('DOMContentLoaded', function() {
                 const sareesSection = document.getElementById('sarees');
                 if (!sareesSection) return;
                 const productBoxes = sareesSection.querySelectorAll('.product-box');
+                productBoxes.forEach(box => {
+                    const title = box.querySelector('h3');
+                    if (value === 'all' || (title && title.textContent === value)) {
+                        box.style.display = '';
+                    } else {
+                        box.style.display = 'none';
+                    }
+                });
+            });
+        });
+        document.addEventListener('click', function() {
+            options.style.display = 'none';
+        });
+    }
+
+    // Custom dropdown for gadgets
+    const customGadgetsDropdown = document.getElementById('custom-gadgets-dropdown');
+    if (customGadgetsDropdown) {
+        const selected = customGadgetsDropdown.querySelector('.selected-option');
+        const options = customGadgetsDropdown.querySelector('.dropdown-options');
+        const optionItems = customGadgetsDropdown.querySelectorAll('.dropdown-option');
+        selected.addEventListener('click', function(e) {
+            e.stopPropagation();
+            options.style.display = options.style.display === 'block' ? 'none' : 'block';
+        });
+        optionItems.forEach(option => {
+            option.addEventListener('click', function(e) {
+                e.stopPropagation();
+                selected.textContent = this.textContent;
+                selected.className = 'selected-option' + (this.classList.contains('all-option') ? ' all-option' : '');
+                options.style.display = 'none';
+                const value = this.getAttribute('data-value');
+                const gadgetsSection = document.getElementById('gadgets');
+                if (!gadgetsSection) return;
+                const productBoxes = gadgetsSection.querySelectorAll('.product-box');
                 productBoxes.forEach(box => {
                     const title = box.querySelector('h3');
                     if (value === 'all' || (title && title.textContent === value)) {
