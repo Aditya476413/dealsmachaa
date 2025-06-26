@@ -78,7 +78,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const products = [
           {
             name: 'Collar Casual Shirt',
-            img: 'https://rukminim2.flixcart.com/image/840/1008/xif0q/shirt/o/l/m/xl-hkv-100-hkv-fashion-original-imah4zyhzzg3ns6x.jpeg?q=60&crop=false',
+            img: 'https://rukminim2.flixcart.com/image/1300/1900/xif0q/shirt/b/n/h/m-sh-chi-9-u-turn-original-imah4rkmchhgsg6a.jpeg?q=20&crop=false',
             link: 'https://www.wishlink.com/share/dw9ch',
             category: 'shirts'
         },
