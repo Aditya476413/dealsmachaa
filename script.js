@@ -39,10 +39,10 @@ document.addEventListener('DOMContentLoaded', function() {
     // Populate deals as a list
     const deals = [
         { value: 'home', label: 'Home' },
-        { value: 'phonefinder', label: 'Phone Finder' },
         { value: 'shirts', label: 'Shirts' },
         { value: 'pants', label: 'Pants' },
         { value: 'saree', label: 'Saree' },
+        { value: 'phonefinder', label: 'Phone Finder' },
         { value: 'laptops', label: 'Laptops' },
         { value: 'tvdeals', label: 'Tv Deals' },
         { value: 'blog', label: 'Blog' },
