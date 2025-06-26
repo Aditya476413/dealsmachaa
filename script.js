@@ -40,6 +40,9 @@ document.addEventListener('DOMContentLoaded', function() {
     const deals = [
         { value: 'home', label: 'Home' },
         { value: 'phonefinder', label: 'Phone Finder' },
+        { value: 'shirts', label: 'Shirts' },
+        { value: 'pants', label: 'Pants' },
+        { value: 'saree', label: 'Saree' },
         { value: 'laptops', label: 'Laptops' },
         { value: 'tvdeals', label: 'Tv Deals' },
         { value: 'blog', label: 'Blog' },
