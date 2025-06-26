@@ -76,6 +76,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Add product cards
     const products = [
+          {
+            name: 'Collar Casual Shirt',
+            img: 'https://rukminim2.flixcart.com/image/840/1008/xif0q/shirt/o/l/m/xl-hkv-100-hkv-fashion-original-imah4zyhzzg3ns6x.jpeg?q=60&crop=false',
+            link: 'https://www.wishlink.com/share/dw9ch',
+            category: 'shirts'
+        },
          {
             name: 'HKV FASHION',
             img: 'https://rukminim2.flixcart.com/image/840/1008/xif0q/shirt/o/l/m/xl-hkv-100-hkv-fashion-original-imah4zyhzzg3ns6x.jpeg?q=60&crop=false',
