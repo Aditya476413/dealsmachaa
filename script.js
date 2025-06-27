@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     function isMobile() {
-        return window.innerWidth <= 4580;
+        return window.innerWidth <= 480;
     }
 
     searchIcon.addEventListener('click', () => {
